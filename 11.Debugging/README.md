@@ -1,0 +1,11 @@
+## Session 11: Debugging and Troubleshooting
+- Importance of debugging in coding
+- Debugging tools and techniques
+  - Using the Eclipse debugger
+  - Setting breakpoints and stepping through code
+- Common coding errors and how to fix them
+  - Syntax errors and runtime errors
+  - Debugging logic errors
+- Practical debugging exercises
+  - Debugging sample programs
+  - Identifying and fixing bugs

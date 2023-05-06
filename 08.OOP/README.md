@@ -1,0 +1,11 @@
+## Session 8: Object-Oriented Programming (OOP) Basics
+- Introduction to object-oriented programming
+- Classes and objects in Java
+  - Defining classes
+  - Creating objects from classes
+- Creating and using objects
+  - Accessing object properties (instance variables)
+  - Calling object methods
+- Basic principles of encapsulation and inheritance
+  - Encapsulating data and behavior within classes
+  - Inheriting properties and methods from parent classes
