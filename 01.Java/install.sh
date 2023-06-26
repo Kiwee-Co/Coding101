@@ -6,9 +6,7 @@ echo "brew installed!"
 
 echo "now installing necessary packages..."
 
-PKGS=(bash bash-completion git btop tree unrar wget curl openjdk@17 maven) 
-
-CASK=(eclipse-java sourcetree bluej)
+PKGS=(bash guntls bash-completion git btop tree unrar wget curl openjdk@17 maven maven-completion eclipse-java sourcetree iterm2 )
 
 SEGMENT=7
 
@@ -23,15 +21,22 @@ install() {
     for ((j = i; j < i + group_size && j < ${#param1[@]}; j++)); do
       PKG="$PKG ${param1[j]}"
     done
-    brew $brew_command $PKG
+    echo "  - Installing $PKG"
+    brew install $PKG -q
   done
 }
 
 
-install PKGS "install" $SEGMENT
-install CASK "install" $SEGMENT
+install PKGS "install" $SEGMENT 
 
-brew cask cleanup 
+# copy git prompt
+cp .bash ~/.bash
+echo "source ~/.bash" >> .bash_profile
+cp .git-prompt.sh ~/
+cp .git-competion.bash ~/
+
+chsh -s /usr/local/bin/bash
+
 brew cleanup -s --prune=all 
 
 echo "All done!"
