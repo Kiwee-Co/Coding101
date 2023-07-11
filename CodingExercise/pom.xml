@@ -1,0 +1,120 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>exercise.coding101</groupId>
+	<artifactId>coding.parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>Coding Exercise 101</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<commons-collections4>4.4</commons-collections4>
+		<commons-lang3>3.12.0</commons-lang3>
+
+		<pico-cli.version>4.7.4</pico-cli.version>
+
+		<!-- maven build plugins -->
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<maven-compiler.version>3.11.0</maven-compiler.version>
+		<maven-source.version>3.3.0</maven-source.version>
+		<maven-dependency-plugin.version>3.6.0</maven-dependency-plugin.version>
+
+		<native.maven.plugin.version>0.9.23</native.maven.plugin.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+
+			<!-- apache commons -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${commons-lang3}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-collections4</artifactId>
+				<version>${commons-collections4}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>info.picocli</groupId>
+				<artifactId>picocli</artifactId>
+				<version>${pico-cli.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven-compiler.version}</version>
+					<configuration>
+						<annotationProcessorPaths>
+							<path>
+								<groupId>info.picocli</groupId>
+								<artifactId>picocli-codegen</artifactId>
+								<version>${pico-cli.version}</version>
+							</path>
+						</annotationProcessorPaths>
+						<compilerArgs>
+							<arg>
+								-Aproject=${project.groupId}/${project.artifactId}</arg>
+						</compilerArgs>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>${maven-source.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<version>${maven-dependency-plugin.version}</version>
+				</plugin>
+			</plugins>
+
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${maven.compiler.source}</source>
+					<target>${maven.compiler.target}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>analyze</id>
+						<goals>
+							<goal>analyze-only</goal>
+						</goals>
+						<configuration>
+							<ignoreNonCompile>true</ignoreNonCompile>
+							<failOnWarning>false</failOnWarning>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<modules>
+		<module>final-project</module>
+	</modules>
+</project>
