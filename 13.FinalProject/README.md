@@ -1,4 +1,4 @@
-## Session 12: Final Project and Recap
+## Session 13: Final Project and Recap
 - Applying the concepts learned throughout the course
 - Working on a small coding project
   - Designing and implementing a simple application

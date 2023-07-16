@@ -1,4 +1,4 @@
-## Session 4: Conditional Statements
+## Session 3: Conditional Statements
 - Introduction to conditional statements (if, else if, else)
 - Using comparison and logical operators
   - Comparison operators (>, <, >=, <=, ==, !=)

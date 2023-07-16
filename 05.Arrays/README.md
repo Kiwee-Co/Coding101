@@ -1,4 +1,4 @@
-## Session 6: Arrays and Lists
+## Session 5: Arrays and Lists
 - Introduction to arrays and lists
   - Declaring arrays
   - Initializing arrays

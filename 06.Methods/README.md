@@ -1,4 +1,4 @@
-## Session 7: Methods and Functions
+## Session 6: Methods and Functions
 - Creating and calling methods in Java
   - Declaring methods
   - Method signatures and return types

@@ -1,4 +1,4 @@
-## Session 2: Introduction to Git and Version Control
+## Session 10: Introduction to Git and Version Control
 - Understanding version control and its benefits
 - Introduction to Git and its basic commands
   - Initializing a Git repository

@@ -1,4 +1,4 @@
-## Session 5: Loops
+## Session 4: Loops
 - Understanding loops and their importance
 - Using for and while loops in Java
 - Loop control statements (break and continue)

@@ -1,4 +1,4 @@
-## Session 11: Debugging and Troubleshooting
+## Session 12: Debugging and Troubleshooting
 - Importance of debugging in coding
 - Debugging tools and techniques
   - Using the Eclipse debugger

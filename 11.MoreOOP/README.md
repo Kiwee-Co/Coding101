@@ -1,4 +1,4 @@
-## Session 10: More OOP Concepts
+## Session 11: More OOP Concepts
 - Inheritance and polymorphism
   - Extending classes and creating derived classes
   - Overriding methods in derived classes

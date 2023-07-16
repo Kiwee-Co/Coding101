@@ -1,4 +1,4 @@
-## Session 3: Variables and Data Types
+## Session 2: Variables and Data Types
 - Understanding variables and their uses
   - Declaring variables
   - Assigning values to variables
