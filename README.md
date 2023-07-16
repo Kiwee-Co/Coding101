@@ -3,6 +3,9 @@
 ## Course Overview
 This coding class is designed to introduce 9-year-olds (and up) to the fundamentals of coding using [Java](https://www.java.com/en/), [Maven](https://maven.apache.org/), [Git](https://git-scm.com/), [Eclipse](https://eclipseide.org/), and [macOS](https://www.apple.com/macos/). Over the course of 12 sessions, each lasting 1 hour, students will learn the basics of programming, problem-solving, version control, software build automation, and using an IDE. The class will be hands-on, with practical exercises and projects to reinforce the concepts learned.
 
+Here is the link to the [Coding Exercise](https://github.com/Kiwee-Co/CodingExercise101).  We will go through how we set it up and make the best use of it on our first day.
+
+
 ## Prerequisites
 - Basic computer literacy
 - Familiarity with Mac operating system
