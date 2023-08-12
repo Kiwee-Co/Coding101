@@ -34,7 +34,7 @@ fi
 
 echo "now installing necessary packages..."
 
-PKGS=(git tree wget curl openjdk@17 maven maven-completion eclipse-jee sourcetree iterm2 )
+PKGS=(git tree wget curl openjdk@17 maven maven-completion eclipse-jee sourcetree iterm2 vim )
 
 SEGMENT=7
 

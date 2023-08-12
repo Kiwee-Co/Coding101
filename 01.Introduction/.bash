@@ -17,13 +17,12 @@ fi
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 #PATH
-PATH=/usr/local/bin:/usr/local/sbin:$PATH:~/scripts/
+PATH=/usr/local/bin:/usr/local/sbin:$PATH:~/scripts/:/opt/homebrew/bin/
 
 # export
 export JAVA_HOME=$(/usr/libexec/java_home -v17)
 export EDITOR=/usr/bin/vim
 
-export GUILE_TLS_CERTIFICATE_DIRECTORY=/usr/local/etc/gnutls/
 
 #alias 
 alias mkdir='mkdir -p'
