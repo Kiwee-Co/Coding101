@@ -20,7 +20,7 @@ fi
 PATH=/usr/local/bin:/usr/local/sbin:$PATH:~/scripts/
 
 # export
-export JAVA_HOME=$(/usr/libexec/java_home -v19)
+export JAVA_HOME=$(/usr/libexec/java_home -v17)
 export EDITOR=/usr/bin/vim
 
 export GUILE_TLS_CERTIFICATE_DIRECTORY=/usr/local/etc/gnutls/
